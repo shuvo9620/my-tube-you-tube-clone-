@@ -14,7 +14,7 @@ const App = () => {
         <div className='flex flex-col h-full'>
           <Header></Header>
           <Routes>
-            <Route path='/' element={<Feed></Feed>}></Route>
+            <Route path='/' exact element={<Feed></Feed>}></Route>
             <Route path='/searchResult/:searchQuery' element={<SearchResult></SearchResult>}></Route>
             <Route path='/video/:id' element={<VideoDetails></VideoDetails>}></Route>
           </Routes>
