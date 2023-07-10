@@ -31,9 +31,7 @@ const Header = () => {
     const pageName = pathname?.split("/")?.filter(Boolean)?.[0];
 
     return (
-        <div>
-            <h2>header</h2>
-        </div>
+        <div className='sticky top-0 z-10 flex flex-row items-center justify-between h-14 px-4 md:px-5 bg-white dark:bg-black'></div>
     );
 };
 
