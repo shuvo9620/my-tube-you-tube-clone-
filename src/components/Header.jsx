@@ -27,6 +27,9 @@ const Header = () => {
         setMobileMenu(!mobileMenu);
     }
 
+    const { pathname } = useLocation();
+    const pageName = pathname?.split("/")?.filter(Boolean)?.[0];
+
     return (
         <div>
             <h2>header</h2>
