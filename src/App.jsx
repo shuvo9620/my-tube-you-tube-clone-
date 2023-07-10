@@ -1,11 +1,12 @@
-import './App.css'
+import React from 'react';
+import { AppContext } from './context/contextApi';
 
-function App() {
+const App = () => {
   return (
-    <>
-      
-    </>
-  )
-}
+    <AppContext>
+      <h2 className='text-red-600'>shuvo</h2>
+    </AppContext>
+  );
+};
 
-export default App
+export default App;
