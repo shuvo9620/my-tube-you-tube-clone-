@@ -20,8 +20,7 @@ const LeftNav = () => {
                                     text={item.type === "home" ? "Home" : item.name}
                                     icon={item.icon}
                                     action={() => {
-                                        clickHandler(item.name, item.type);
-                                        navigate("/");
+                                        
                                     }}
                                     className={`${selectedCategory === item.name
                                             ? "bg-white/[0.15]"
